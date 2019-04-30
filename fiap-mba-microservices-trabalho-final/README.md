@@ -39,7 +39,7 @@ http://localhost:8080/swagger-ui.html
 ### Transactions - Insere dados na aplicação via endpoint da API
 ```sh
 curl -X POST \
-  http://localhost:8000/transactions \
+  http://localhost:8080/transactions \
   -H 'content-type: application/json' \
   -d '{ 
 	"timestamp": 1556579512,
@@ -47,9 +47,9 @@ curl -X POST \
       }' 
 ```
 
-### Statistics - Retorna estatísticas das transações em memória
+### Statistics - Retorna estatísticas das transações em memória (últimos 60 segundos)
 ```sh
 curl -X GET \
-  http://localhost:8000/statistics \
+  http://localhost:8090/statistics \
   -H 'content-type: application/json'
 ```
